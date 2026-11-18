@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAVALON — Creative Automotive Interior Showcase (Home 2)</title>
+  <meta name="description" content="Explore CAVALON signature interior designs, interactive car cabin customizer, luxury materials, and 5-stage precision installation." />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main>
+    <!-- SECTION 1: FULL-SCREEN AUTOMOTIVE HERO (SPLIT ARCHITECTURAL) -->
+    <section class="hero-h2" id="h2-hero">
+      <div class="hero-h2-left">
+        <span class="eyebrow hero-reveal-1">Atelier Showcase II</span>
+        <h1 class="hero-h1-title hero-reveal-2">Sculpted Cabins. Unrivaled Presence.</h1>
+        <p class="hero-h1-sub hero-reveal-3">
+          A curated lookbook of bespoke automotive interiors — combining Italian hides, acoustic micro-perforation, and artisan contrast stitching.
+        </p>
+        <div class="hero-cta-row hero-reveal-4">
+          <a href="#customize-journey" class="btn btn-primary">Customize Your Car</a>
+          <a href="gallery.html" class="btn btn-light-outline">View Lookbook</a>
+        </div>
+      </div>
+      <div class="hero-h2-right img-zoom-wrap">
+        <img src="assets/images/hero-home2.jpg" alt="Cinematic luxury sports sedan ivory and Alcantara cockpit" />
+      </div>
+    </section>
+
+    <!-- SECTION 2: SIGNATURE INTERIOR DESIGNS (MAGAZINE COMPOSITION) -->
+    <section class="section" id="signature-designs">
+      <div class="container">
+        <div class="magazine-grid">
+          <div class="magazine-collage" data-anim="fade-right">
+            <img src="assets/images/sig-1.jpg" alt="Modern luxury car cabin signature design" class="magazine-collage-main" loading="lazy" />
+            <img src="assets/images/sig-2.jpg" alt="Perforated leather seat bolster detail" class="magazine-collage-sub anim-float" loading="lazy" />
+            <img src="assets/images/sig-3.jpg" alt="Bespoke leather center console trim" class="magazine-collage-sub" loading="lazy" />
+          </div>
+
+          <div data-anim="fade-left" data-delay="120">
+            <span class="eyebrow">Signature Interior Designs</span>
+            <h2 class="section-title">Editorial Luxury Engineered for Daily Driving</h2>
+            <p class="section-subtitle" style="margin-bottom: 24px;">
+              Each signature edition balances visual drama with ergonomic lumbar support, breathable center zones, and tactile soft-touch surfaces across seats, consoles, and door cards.
+            </p>
+            <ul style="display: grid; gap: 12px; margin-bottom: 28px; color: var(--text-secondary);">
+              <li>&#10003; Acoustic &amp; ventilated micro-perforated seat centers</li>
+              <li>&#10003; Custom headrest monogramming &amp; contrast piping</li>
+              <li>&#10003; Integrated side-airbag breakaway seam certification</li>
+            </ul>
+            <a href="products.html" class="btn btn-secondary">Browse All Editions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CUSTOMIZE YOUR CAR (6-STEP INTERACTIVE JOURNEY) -->
+    <section class="section section-alt" id="customize-journey">
+      <div class="container">
+        <div class="section-header centered" data-anim="fade-up">
+          <span class="eyebrow">Interactive Studio</span>
+          <h2 class="section-title">Customize Your Car in Six Steps</h2>
+          <p class="section-subtitle">Configure your vehicle, preferred material, hide tone, and stitch geometry to generate a personalized quote request.</p>
+        </div>
+
+        <div class="customizer-panel" data-anim="flip-up">
+          <div class="customizer-steps">
+            <div class="form-group">
+              <label class="form-label" for="cfg-brand">1. Select Car Brand</label>
+              <select id="cfg-brand" class="form-control">
+                <option value="Maruti Suzuki">Maruti Suzuki</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="Tata">Tata</option>
+                <option value="Mahindra">Mahindra</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Kia">Kia</option>
+                <option value="Honda">Honda</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Skoda">Skoda</option>
+                <option value="MG">MG</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cfg-model">2. Select Car Model</label>
+              <select id="cfg-model" class="form-control"></select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cfg-material">3. Choose Interior Material</label>
+              <select id="cfg-material" class="form-control">
+                <option value="Nappa-Inspired Leather">Nappa-Inspired Leather</option>
+                <option value="Genuine Top-Grain Leather">Genuine Top-Grain Leather</option>
+                <option value="Premium Synthetic Leather">Premium Synthetic Leather</option>
+                <option value="Alcantara Suede Hybrid">Alcantara Suede Hybrid</option>
+                <option value="Breathable Performance Fabric">Breathable Performance Fabric</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cfg-stitch">5. Choose Stitching &amp; Design</label>
+              <select id="cfg-stitch" class="form-control">
+                <option value="Diamond Quilted">Diamond Quilted</option>
+                <option value="Vertical GT Fluting">Vertical GT Fluting</option>
+                <option value="Hexagon Honeycomb">Hexagon Honeycomb</option>
+                <option value="OEM Minimalist Seam">OEM Minimalist Seam</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="grid-column: 1 / -1;">
+              <span class="form-label">4. Select Color Tone: <strong id="cfg-color-name" style="color: var(--accent);">Cognac Tan</strong></span>
+              <div class="swatch-row" id="cfg-swatches">
+                <button type="button" class="swatch-btn active" data-color="Cognac Tan" style="background: #9E5B34;" aria-label="Cognac Tan"></button>
+                <button type="button" class="swatch-btn" data-color="Obsidian Black" style="background: #1B1D22;" aria-label="Obsidian Black"></button>
+                <button type="button" class="swatch-btn" data-color="Ivory Cream" style="background: #EAE2D3;" aria-label="Ivory Cream"></button>
+                <button type="button" class="swatch-btn" data-color="Espresso Brown" style="background: #4A2E20;" aria-label="Espresso Brown"></button>
+                <button type="button" class="swatch-btn" data-color="Crimson Red" style="background: #8B1E24;" aria-label="Crimson Red"></button>
+                <button type="button" class="swatch-btn" data-color="Slate Charcoal" style="background: #464B53;" aria-label="Slate Charcoal"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="customizer-summary">
+            <div>
+              <span class="eyebrow">6. Your Specification</span>
+              <h3 class="cat-scroll-title" id="cfg-summary-title" style="font-size: 1.4rem; margin-bottom: 14px;">Maruti Suzuki — Swift</h3>
+              <dl style="display: grid; gap: 10px; font-size: 0.94rem;">
+                <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+                  <dt style="color: var(--text-muted);">Material</dt>
+                  <dd id="sum-material" style="font-weight: 600;">Nappa-Inspired Leather</dd>
+                </div>
+                <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+                  <dt style="color: var(--text-muted);">Color</dt>
+                  <dd id="sum-color" style="font-weight: 600;">Cognac Tan</dd>
+                </div>
+                <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;">
+                  <dt style="color: var(--text-muted);">Stitching</dt>
+                  <dd id="sum-stitch" style="font-weight: 600;">Diamond Quilted</dd>
+                </div>
+              </dl>
+            </div>
+            <a href="contact.html" id="cfg-quote-link" class="btn btn-primary" style="width: 100%;">Request Custom Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: PREMIUM MATERIALS SHOWCASE (SIDE-BY-SIDE GRID) -->
+    <section class="section" id="materials">
+      <div class="container">
+        <div class="section-header" data-anim="fade-up">
+          <span class="eyebrow">Tactile Excellence</span>
+          <h2 class="section-title">Premium Materials Showcase</h2>
+        </div>
+
+        <div class="products-grid" data-anim="stagger-up">
+          <article class="cat-scroll-card">
+            <div class="img-zoom-wrap"><img src="assets/images/mat-genuine.jpg" alt="Genuine Leather close-up" class="cat-scroll-img" loading="lazy" /></div>
+            <div class="cat-scroll-body">
+              <h3 class="cat-scroll-title">Genuine Leather</h3>
+              <p class="section-subtitle">Full-grain hides with rich natural grain and breathable comfort.</p>
+            </div>
+          </article>
+          <article class="cat-scroll-card">
+            <div class="img-zoom-wrap"><img src="assets/images/mat-synthetic.jpg" alt="Premium Synthetic Leather" class="cat-scroll-img" loading="lazy" /></div>
+            <div class="cat-scroll-body">
+              <h3 class="cat-scroll-title">Premium Synthetic Leather</h3>
+              <p class="section-subtitle">High-durability automotive PU engineered for stain and UV resistance.</p>
+            </div>
+          </article>
+          <article class="cat-scroll-card">
+            <div class="img-zoom-wrap"><img src="assets/images/mat-nappa.jpg" alt="Nappa-Inspired Finishes" class="cat-scroll-img" loading="lazy" /></div>
+            <div class="cat-scroll-body">
+              <h3 class="cat-scroll-title">Nappa-Inspired Finishes</h3>
+              <p class="section-subtitle">Buttery-smooth matte touch with minimal grain for flagship cabins.</p>
+            </div>
+          </article>
+          <article class="cat-scroll-card">
+            <div class="img-zoom-wrap"><img src="assets/images/mat-fabric.jpg" alt="Breathable Fabric" class="cat-scroll-img" loading="lazy" /></div>
+            <div class="cat-scroll-body">
+              <h3 class="cat-scroll-title">Breathable Fabric</h3>
+              <p class="section-subtitle">3D air-mesh and jacquard weaves ideal for tropical summers.</p>
+            </div>
+          </article>
+          <article class="cat-scroll-card">
+            <div class="img-zoom-wrap"><img src="assets/images/mat-suede.jpg" alt="Suede-Style Materials" class="cat-scroll-img" loading="lazy" /></div>
+            <div class="cat-scroll-body">
+              <h3 class="cat-scroll-title">Suede-Style Materials</h3>
+              <p class="section-subtitle">High-grip Alcantara-style micro-suede for sport bolsters and wheels.</p>
+            </div>
+          </article>
+          <article class="cat-scroll-card">
+            <div class="img-zoom-wrap"><img src="assets/images/mat-quilted.jpg" alt="Quilted Upholstery" class="cat-scroll-img" loading="lazy" /></div>
+            <div class="cat-scroll-body">
+              <h3 class="cat-scroll-title">Quilted Upholstery</h3>
+              <p class="section-subtitle">Multi-layer padded diamond and fluted patterns with acoustic backing.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: VEHICLE INTERIOR SPECIALTIES -->
+    <section class="section section-alt" id="vehicle-specialties">
+      <div class="container">
+        <div class="section-header centered" data-anim="fade-up">
+          <span class="eyebrow">Every Body Style</span>
+          <h2 class="section-title">Vehicle Interior Specialties</h2>
+        </div>
+
+        <div class="specialties-grid" data-anim="stagger-up">
+          <a href="gallery.html?type=hatchback" class="specialty-card">
+            <img src="assets/images/veh-hatchback.jpg" alt="Hatchback custom interior" loading="lazy" />
+            <div class="specialty-overlay">
+              <h3 class="cat-scroll-title">Hatchbacks</h3>
+              <p style="font-size: 0.88rem; opacity: 0.85;">Sporty two-tone trims &amp; compact ergonomics.</p>
+            </div>
+          </a>
+          <a href="gallery.html?type=sedan" class="specialty-card">
+            <img src="assets/images/veh-sedan.jpg" alt="Sedan custom interior" loading="lazy" />
+            <div class="specialty-overlay">
+              <h3 class="cat-scroll-title">Sedans</h3>
+              <p style="font-size: 0.88rem; opacity: 0.85;">Executive perforated Nappa &amp; rear armrest tailoring.</p>
+            </div>
+          </a>
+          <a href="gallery.html?type=suv" class="specialty-card">
+            <img src="assets/images/veh-suv.jpg" alt="SUV custom interior" loading="lazy" />
+            <div class="specialty-overlay">
+              <h3 class="cat-scroll-title">SUVs</h3>
+              <p style="font-size: 0.88rem; opacity: 0.85;">Rugged diamond-quilted hides &amp; 7D floor protection.</p>
+            </div>
+          </a>
+          <a href="gallery.html?type=suv" class="specialty-card">
+            <img src="assets/images/veh-muv.jpg" alt="MUV custom interior" loading="lazy" />
+            <div class="specialty-overlay">
+              <h3 class="cat-scroll-title">MUVs</h3>
+              <p style="font-size: 0.88rem; opacity: 0.85;">Captain-seat lounge upgrades for 6 &amp; 7-seater cabins.</p>
+            </div>
+          </a>
+          <a href="gallery.html?type=luxury" class="specialty-card">
+            <img src="assets/images/veh-luxury.jpg" alt="Luxury Car custom interior" loading="lazy" />
+            <div class="specialty-overlay">
+              <h3 class="cat-scroll-title">Luxury Cars</h3>
+              <p style="font-size: 0.88rem; opacity: 0.85;">Bespoke full-grain re-trimming &amp; dashboard stitching.</p>
+            </div>
+          </a>
+          <a href="gallery.html?type=sports" class="specialty-card">
+            <img src="assets/images/veh-sports.jpg" alt="Sports Car custom interior" loading="lazy" />
+            <div class="specialty-overlay">
+              <h3 class="cat-scroll-title">Sports Cars</h3>
+              <p style="font-size: 0.88rem; opacity: 0.85;">Alcantara bucket bolsters &amp; flat-bottom wheel wraps.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: OUR INSTALLATION PROCESS (5-STEP TIMELINE) -->
+    <section class="section" id="installation-process">
+      <div class="container">
+        <div class="section-header" data-anim="fade-up">
+          <span class="eyebrow">Seamless Studio Experience</span>
+          <h2 class="section-title">Our 5-Stage Installation Process</h2>
+        </div>
+
+        <div class="timeline-grid" data-anim="skew-rise">
+          <div class="timeline-step">
+            <div class="timeline-num">01</div>
+            <h3 class="cat-scroll-title">Choose Your<br/>Design</h3>
+            <p class="section-subtitle">Select your quilting pattern, bolster contour, and piping geometry.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-num">02</div>
+            <h3 class="cat-scroll-title">Select Your<br/>Material</h3>
+            <p class="section-subtitle">Compare genuine hides, Nappa finishes, suede, and fabrics in person.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-num">03</div>
+            <h3 class="cat-scroll-title">Confirm Customization</h3>
+            <p class="section-subtitle">Approve 3D model-year templates and custom stitch thread shades.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-num">04</div>
+            <h3 class="cat-scroll-title">Professional Installation</h3>
+            <p class="section-subtitle">Certified upholsterers tension-fit every panel without loose edges.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-num">05</div>
+            <h3 class="cat-scroll-title">Final Quality Inspection</h3>
+            <p class="section-subtitle">24-point seam, airbag clearance, and cabin detailing sign-off.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: PREMIUM GALLERY PREVIEW & CTA -->
+    <section class="section section-alt" id="h2-gallery-preview">
+      <div class="container">
+        <div class="section-header centered" data-anim="fade-up">
+          <span class="eyebrow">Atelier Portfolio</span>
+          <h2 class="section-title">Recent Cabin Transformations</h2>
+        </div>
+
+        <div class="mosaic-grid" data-anim="clip-reveal" style="margin-bottom: 42px;">
+          <div class="mosaic-item img-zoom-wrap"><img src="assets/images/h2-mosaic-1.jpg" alt="Porsche leather interior build" loading="lazy" /></div>
+          <div class="mosaic-item img-zoom-wrap"><img src="assets/images/h2-mosaic-2.jpg" alt="Mercedes luxury interior build" loading="lazy" /></div>
+          <div class="mosaic-item img-zoom-wrap"><img src="assets/images/h2-mosaic-3.jpg" alt="BMW sports interior build" loading="lazy" /></div>
+          <div class="mosaic-item img-zoom-wrap"><img src="assets/images/h2-mosaic-4.jpg" alt="Audi cockpit interior build" loading="lazy" /></div>
+        </div>
+
+        <div class="hero-cta-row" style="justify-content: center;">
+          <a href="gallery.html" class="btn btn-secondary">View Full Gallery</a>
+          <a href="contact.html" class="btn btn-primary">Request Your Custom Design</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    const MODELS_BY_BRAND = {
+      'Maruti Suzuki': ['Swift', 'Baleno', 'Brezza', 'Ertiga', 'Fronx'],
+      'Hyundai': ['i20', 'Creta', 'Venue', 'Verna', 'Exter'],
+      'Tata': ['Nexon', 'Punch', 'Harrier', 'Safari', 'Altroz'],
+      'Mahindra': ['Thar', 'XUV700', 'Scorpio N', 'XUV 3XO'],
+      'Toyota': ['Innova Crysta', 'Innova Hycross', 'Fortuner', 'Glanza'],
+      'Kia': ['Seltos', 'Sonet', 'Carens'],
+      'Honda': ['City', 'Amaze', 'Elevate'],
+      'Volkswagen': ['Polo', 'Virtus', 'Taigun'],
+      'Skoda': ['Slavia', 'Kushaq'],
+      'MG': ['Hector', 'Astor', 'Comet EV']
+    };
+
+    const brandSel = document.getElementById('cfg-brand');
+    const modelSel = document.getElementById('cfg-model');
+    const matSel = document.getElementById('cfg-material');
+    const stitchSel = document.getElementById('cfg-stitch');
+    let selectedColor = 'Cognac Tan';
+
+    function populateModels() {
+      const models = MODELS_BY_BRAND[brandSel.value] || ['Custom Model'];
+      modelSel.innerHTML = models.map((m) => `<option value="${m}">${m}</option>`).join('');
+      updateSummary();
+    }
+
+    function updateSummary() {
+      document.getElementById('cfg-summary-title').textContent = `${brandSel.value} — ${modelSel.value}`;
+      document.getElementById('sum-material').textContent = matSel.value;
+      document.getElementById('sum-color').textContent = selectedColor;
+      document.getElementById('sum-stitch').textContent = stitchSel.value;
+      const params = new URLSearchParams({
+        brand: brandSel.value,
+        model: modelSel.value,
+        material: matSel.value,
+        color: selectedColor
+      });
+      document.getElementById('cfg-quote-link').href = `contact.html?${params.toString()}`;
+    }
+
+    brandSel.addEventListener('change', populateModels);
+    modelSel.addEventListener('change', updateSummary);
+    matSel.addEventListener('change', updateSummary);
+    stitchSel.addEventListener('change', updateSummary);
+
+    document.querySelectorAll('#cfg-swatches .swatch-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#cfg-swatches .swatch-btn').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        selectedColor = btn.getAttribute('data-color');
+        document.getElementById('cfg-color-name').textContent = selectedColor;
+        updateSummary();
+      });
+    });
+
+    populateModels();
+  </script>
+</body>
+</html>

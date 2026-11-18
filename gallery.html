@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — CAVALON Automotive Interior Transformations</title>
+  <meta name="description" content="Browse CAVALON automotive interior transformations, diamond-quilted leather cabins, sports cockpits, and interactive before-and-after sliders." />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main>
+    <!-- SECTION 1: GALLERY HERO -->
+    <section class="page-hero" id="gallery-hero">
+      <img src="assets/images/hero-gallery.jpg" alt="Espresso and cream diamond-stitched luxury SUV cabin" class="page-hero-bg" />
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content">
+        <span class="eyebrow hero-reveal-1">Visual Lookbook</span>
+        <h1 class="page-hero-title hero-reveal-2">Every Interior Has a Story.</h1>
+        <p class="page-hero-desc hero-reveal-3">
+          Explore completed customer transformations across luxury SUVs, executive sedans, performance hatchbacks, and grand tourers.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 2: EXPLORE OUR INTERIOR TRANSFORMATIONS -->
+    <section class="section" id="gallery-transformations">
+      <div class="container">
+        <div class="section-header" data-anim="fade-up">
+          <span class="eyebrow">Curated Builds</span>
+          <h2 class="section-title">Explore Our Interior Transformations</h2>
+          <div class="brand-pills" id="gallery-filters" style="margin-top: 20px;">
+            <button type="button" class="filter-pill active" data-gfilter="all">All Builds</button>
+            <button type="button" class="filter-pill" data-gfilter="luxury">Luxury Leather</button>
+            <button type="button" class="filter-pill" data-gfilter="sports">Sports-Inspired</button>
+            <button type="button" class="filter-pill" data-gfilter="twotone">Custom Color Combos</button>
+            <button type="button" class="filter-pill" data-gfilter="quilted">Diamond Quilted</button>
+          </div>
+        </div>
+
+        <div class="gallery-masonry" id="gallery-grid" data-anim="stagger-up"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: GALLERY BY CAR TYPE -->
+    <section class="section section-alt" id="gallery-by-type">
+      <div class="container">
+        <div class="section-header centered" data-anim="fade-up">
+          <span class="eyebrow">Browse by Body Style</span>
+          <h2 class="section-title">Gallery by Car Type</h2>
+        </div>
+
+        <div class="values-grid" data-anim="fade-left">
+          <div class="specialty-card" style="aspect-ratio: 3/4;">
+            <img src="assets/images/gal-hatch.jpg" alt="Hatchback custom interior" loading="lazy" />
+            <div class="specialty-overlay">
+              <h3 class="cat-scroll-title">Hatchbacks</h3>
+              <p style="font-size: 0.84rem; opacity: 0.85;">Swift, i20, Altroz, Polo</p>
+            </div>
+          </div>
+          <div class="specialty-card" style="aspect-ratio: 3/4;">
+            <img src="assets/images/gal-sedan.jpg" alt="Sedan custom interior" loading="lazy" />
+            <div class="specialty-overlay">
+              <h3 class="cat-scroll-title">Sedans</h3>
+              <p style="font-size: 0.84rem; opacity: 0.85;">City, Verna, Virtus, Slavia</p>
+            </div>
+          </div>
+          <div class="specialty-card" style="aspect-ratio: 3/4;">
+            <img src="assets/images/gal-suv.jpg" alt="SUV custom interior" loading="lazy" />
+            <div class="specialty-overlay">
+              <h3 class="cat-scroll-title">SUVs</h3>
+              <p style="font-size: 0.84rem; opacity: 0.85;">XUV700, Fortuner, Harrier, Creta</p>
+            </div>
+          </div>
+          <div class="specialty-card" style="aspect-ratio: 3/4;">
+            <img src="assets/images/gal-lux.jpg" alt="Luxury car custom interior" loading="lazy" />
+            <div class="specialty-overlay">
+              <h3 class="cat-scroll-title">Luxury Cars</h3>
+              <p style="font-size: 0.84rem; opacity: 0.85;">Executive &amp; Flagship Cabins</p>
+            </div>
+          </div>
+          <div class="specialty-card" style="aspect-ratio: 3/4;">
+            <img src="assets/images/gal-sport.jpg" alt="Sports car custom interior" loading="lazy" />
+            <div class="specialty-overlay">
+              <h3 class="cat-scroll-title">Sports Cars</h3>
+              <p style="font-size: 0.84rem; opacity: 0.85;">Alcantara &amp; Track Cockpits</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: BEFORE & AFTER TRANSFORMATIONS -->
+    <section class="section" id="gallery-before-after">
+      <div class="container">
+        <div class="section-header centered" data-anim="fade-up">
+          <span class="eyebrow">Real Studio Results</span>
+          <h2 class="section-title">Before &amp; After Transformations</h2>
+          <div class="brand-pills" style="margin-top: 20px; justify-content: center;">
+            <button type="button" class="filter-pill active" data-gba="0">Harrier — Diamond Quilted Cognac</button>
+            <button type="button" class="filter-pill" data-gba="1">Fortuner — Bespoke Beige Cabin</button>
+          </div>
+        </div>
+
+        <div class="ba-slider" data-anim="clip-reveal">
+          <img src="assets/images/ba3-before.jpg" alt="Before transformation interior" class="ba-img" id="g-ba-before" />
+          <div class="ba-after-wrap">
+            <img src="assets/images/ba3-after.jpg" alt="After transformation custom interior" class="ba-img" id="g-ba-after" />
+          </div>
+          <div class="ba-handle"><div class="ba-handle-knob">&harr;</div></div>
+          <span class="ba-badge ba-badge-before">Before</span>
+          <span class="ba-badge ba-badge-after">After CAVALON</span>
+          <input type="range" min="5" max="95" value="50" class="ba-range" aria-label="Gallery before and after comparison slider" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: GET YOUR CUSTOM INTERIOR -->
+    <section class="section section-alt" id="gallery-cta">
+      <div class="container">
+        <div class="split-editorial">
+          <div class="craft-img-frame img-zoom-wrap" data-anim="fade-right">
+            <img src="assets/images/gal-cta.jpg" alt="Custom dream car cockpit interior" loading="lazy" />
+          </div>
+          <div data-anim="fade-left">
+            <span class="eyebrow">Commission Your Build</span>
+            <h2 class="section-title">Get Your Custom Interior</h2>
+            <p class="section-subtitle" style="margin-bottom: 28px;">
+              Inspired by a transformation in our gallery? Share your car model and preferred color palette with our studio team to receive a tailored design proposal.
+            </p>
+            <a href="contact.html" class="btn btn-primary">Request Your Design</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="lightbox-modal" aria-hidden="true">
+    <div class="modal-box" style="max-width: 920px; background: #0B0C0F; color: #FAF8F5;">
+      <button type="button" class="modal-close-btn" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+      <img id="lightbox-img" src="" alt="" style="width: 100%; max-height: 72dvh; object-fit: contain; background: #07080A;" />
+      <div style="padding: 20px 26px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+        <div>
+          <h3 id="lightbox-title" style="font-family: var(--font-display); font-size: 1.25rem;"></h3>
+          <p id="lightbox-sub" style="color: #A3A8B2; font-size: 0.9rem;"></p>
+        </div>
+        <a href="contact.html" class="btn btn-primary btn-sm">Request This Look</a>
+      </div>
+    </div>
+  </div>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    const GALLERY_ITEMS = [
+      { img: 'assets/images/gal-1.jpg', title: 'Cognac Diamond Nappa Cabin', sub: 'Mahindra XUV700 — Full Seat & Door Suite', cat: 'quilted' },
+      { img: 'assets/images/gal-2.jpg', title: 'Ivory Sovereign Perforated Seats', sub: 'Toyota Innova Hycross — Chauffeur Edition', cat: 'luxury' },
+      { img: 'assets/images/gal-3.jpg', title: 'Obsidian Alcantara Track Trim', sub: 'Volkswagen Virtus GT — Sports Bolsters', cat: 'sports' },
+      { img: 'assets/images/gal-4.jpg', title: 'Crimson & Charcoal Two-Tone', sub: 'Hyundai i20 N-Line — Custom Stitching', cat: 'twotone' },
+      { img: 'assets/images/gal-5.jpg', title: 'Grand Tourer Saddle Upholstery', sub: 'Skoda Slavia — Contrast French Seams', cat: 'luxury' },
+      { img: 'assets/images/gal-6.jpg', title: 'Espresso Quilted SUV Cabin', sub: 'Tata Safari — 7-Seater Diamond Suite', cat: 'quilted' },
+      { img: 'assets/images/gal-7.jpg', title: 'Minimalist Slate EV Interior', sub: 'MG Comet EV — Breathable Two-Tone', cat: 'twotone' },
+      { img: 'assets/images/gal-8.jpg', title: 'Heritage Tan Cockpit Upgrade', sub: 'Mahindra Thar — Weather-Resistant Hide', cat: 'sports' }
+    ];
+
+    let activeGFilter = 'all';
+
+    function renderGallery() {
+      const grid = document.getElementById('gallery-grid');
+      const items = activeGFilter === 'all' ? GALLERY_ITEMS : GALLERY_ITEMS.filter((i) => i.cat === activeGFilter);
+      grid.innerHTML = items.map((item) => `
+        <div class="gallery-tile" onclick="openLightbox('${item.img}', '${item.title.replace(/'/g, "\\'")}', '${item.sub.replace(/'/g, "\\'")}')">
+          <img src="${item.img}" alt="${item.title}" loading="lazy" />
+          <div class="gallery-tile-cap">
+            <h3 style="font-family: var(--font-display); font-size: 1.05rem;">${item.title}</h3>
+            <p style="font-size: 0.82rem; opacity: 0.85;">${item.sub}</p>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    window.openLightbox = function (src, title, sub) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-title').textContent = title;
+      document.getElementById('lightbox-sub').textContent = sub;
+      document.getElementById('lightbox-modal').classList.add('open');
+    };
+
+    document.getElementById('lightbox-close').addEventListener('click', () => {
+      document.getElementById('lightbox-modal').classList.remove('open');
+    });
+    document.getElementById('lightbox-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'lightbox-modal') e.target.classList.remove('open');
+    });
+
+    document.querySelectorAll('[data-gfilter]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        activeGFilter = btn.getAttribute('data-gfilter');
+        document.querySelectorAll('[data-gfilter]').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderGallery();
+      });
+    });
+
+    const gBaPairs = [
+      { before: 'assets/images/ba3-before.jpg', after: 'assets/images/ba3-after.jpg' },
+      { before: 'assets/images/ba4-before.jpg', after: 'assets/images/ba4-after.jpg' }
+    ];
+    document.querySelectorAll('[data-gba]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('[data-gba]').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        const idx = parseInt(btn.getAttribute('data-gba'), 10);
+        document.getElementById('g-ba-before').src = gBaPairs[idx].before;
+        document.getElementById('g-ba-after').src = gBaPairs[idx].after;
+      });
+    });
+
+    renderGallery();
+  </script>
+</body>
+</html>

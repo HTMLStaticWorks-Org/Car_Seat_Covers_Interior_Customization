@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products — CAVALON Custom Automotive Interior Collections</title>
+  <meta name="description" content="Explore CAVALON custom-fit car seat covers, diamond-quilted leather, dashboard wraps, steering covers, and complete interior packages by car brand and model." />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main>
+    <!-- SECTION 1: PRODUCTS HERO -->
+    <section class="page-hero" id="products-hero">
+      <img src="assets/images/hero-products.jpg" alt="Custom tailored charcoal and champagne leather car seats" class="page-hero-bg" />
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content">
+        <span class="eyebrow hero-reveal-1">Custom Interior Collections</span>
+        <h1 class="page-hero-title hero-reveal-2">Find the Perfect Interior for Your Car.</h1>
+        <p class="page-hero-desc hero-reveal-3">
+          Every CAVALON collection is cut to your exact vehicle model and tailored to order. Select your car, material, and aesthetic — then request a bespoke quote.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SHOP BY CAR BRAND & MODEL -->
+    <section class="section" id="shop-by-brand">
+      <div class="container">
+        <div class="section-header" data-anim="fade-up">
+          <span class="eyebrow">Model-Specific Fitment</span>
+          <h2 class="section-title">Shop by Car Brand &amp; Model</h2>
+          <p class="section-subtitle">Filter our custom-fit collections by your automobile brand, specific model, or keyword.</p>
+        </div>
+
+        <div class="filter-toolbar" data-anim="fade-up">
+          <div style="display: flex; flex-wrap: wrap; gap: 12px; flex: 1;">
+            <select id="brand-filter" class="form-control" style="max-width: 230px;" aria-label="Filter by Car Brand">
+              <option value="all">All Car Brands</option>
+              <option value="Maruti Suzuki">Maruti Suzuki</option>
+              <option value="Hyundai">Hyundai</option>
+              <option value="Tata">Tata</option>
+              <option value="Mahindra">Mahindra</option>
+              <option value="Toyota">Toyota</option>
+              <option value="Kia">Kia</option>
+              <option value="Honda">Honda</option>
+              <option value="Renault">Renault</option>
+              <option value="Volkswagen">Volkswagen</option>
+              <option value="Skoda">Skoda</option>
+              <option value="MG">MG</option>
+            </select>
+            <select id="model-filter" class="form-control" style="max-width: 230px;" aria-label="Filter by Car Model">
+              <option value="all">All Models</option>
+            </select>
+            <input type="search" id="product-search" class="form-control" style="max-width: 280px;" placeholder="Search design, material, or model..." aria-label="Search products" />
+          </div>
+          <select id="product-sort" class="form-control" style="max-width: 210px;" aria-label="Sort Products">
+            <option value="featured">Sort: Featured</option>
+            <option value="az">Sort: Name (A–Z)</option>
+            <option value="za">Sort: Name (Z–A)</option>
+          </select>
+        </div>
+
+        <div class="brand-pills" id="brand-quick-pills" data-anim="fade-left">
+          <button type="button" class="filter-pill active" data-brand-pill="all">All Brands</button>
+          <button type="button" class="filter-pill" data-brand-pill="Maruti Suzuki">Maruti Suzuki (Swift, Baleno, Brezza, Ertiga, Fronx)</button>
+          <button type="button" class="filter-pill" data-brand-pill="Hyundai">Hyundai (i20, Creta, Venue, Verna, Exter)</button>
+          <button type="button" class="filter-pill" data-brand-pill="Tata">Tata (Nexon, Punch, Harrier, Safari, Altroz)</button>
+          <button type="button" class="filter-pill" data-brand-pill="Mahindra">Mahindra (Thar, XUV700, Scorpio N, XUV 3XO)</button>
+          <button type="button" class="filter-pill" data-brand-pill="Toyota">Toyota (Innova Crysta, Hycross, Fortuner, Glanza)</button>
+          <button type="button" class="filter-pill" data-brand-pill="Kia">Kia (Seltos, Sonet, Carens)</button>
+          <button type="button" class="filter-pill" data-brand-pill="Honda">Honda (City, Amaze, Elevate)</button>
+          <button type="button" class="filter-pill" data-brand-pill="Renault">Renault (Kwid, Kiger, Triber)</button>
+          <button type="button" class="filter-pill" data-brand-pill="Volkswagen">Volkswagen (Polo, Virtus, Taigun)</button>
+          <button type="button" class="filter-pill" data-brand-pill="Skoda">Skoda (Slavia, Kushaq)</button>
+          <button type="button" class="filter-pill" data-brand-pill="MG">MG (Hector, Astor, Comet EV)</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: EXPLORE PRODUCT CATEGORIES -->
+    <section class="section section-alt" id="product-categories">
+      <div class="container">
+        <div class="section-header" data-anim="fade-up">
+          <span class="eyebrow">Ten Bespoke Categories</span>
+          <h2 class="section-title">Explore Product Categories</h2>
+        </div>
+
+        <div class="brand-pills" id="category-pills" data-anim="fade-right">
+          <button type="button" class="filter-pill active" data-cat="all">All Categories</button>
+          <button type="button" class="filter-pill" data-cat="leather">Premium Leather Seat Covers</button>
+          <button type="button" class="filter-pill" data-cat="fabric">Fabric Seat Covers</button>
+          <button type="button" class="filter-pill" data-cat="diamond">Diamond Quilted Seat Covers</button>
+          <button type="button" class="filter-pill" data-cat="twotone">Custom Two-Tone Seat Covers</button>
+          <button type="button" class="filter-pill" data-cat="sports">Sports Interior Designs</button>
+          <button type="button" class="filter-pill" data-cat="dashboard">Dashboard Covers</button>
+          <button type="button" class="filter-pill" data-cat="door">Door Panel Upholstery</button>
+          <button type="button" class="filter-pill" data-cat="steering">Steering Wheel Covers</button>
+          <button type="button" class="filter-pill" data-cat="mats">Floor Mats</button>
+          <button type="button" class="filter-pill" data-cat="complete">Complete Interior Packages</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: PREMIUM PRODUCT SHOWCASE -->
+    <section class="section" id="product-showcase">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 28px;">
+          <h2 class="section-title" style="margin-bottom: 8px; font-size: 1.8rem;">Curated Collection Showcase</h2>
+          <span id="product-count" style="color: var(--text-muted); font-size: 0.92rem;">Showing 10 bespoke designs</span>
+        </div>
+
+        <div class="products-grid" id="products-grid" data-anim="stagger-up"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CUSTOM ORDER & PRODUCT ENQUIRY -->
+    <section class="section section-alt" id="custom-order">
+      <div class="container">
+        <div class="split-editorial">
+          <div class="craft-img-frame img-zoom-wrap" data-anim="clip-reveal">
+            <img src="assets/images/prod-custom-cta.jpg" alt="Bespoke automotive interior tailoring and custom sizing" loading="lazy" />
+          </div>
+          <div data-anim="fade-left">
+            <span class="eyebrow">Made-to-Measure</span>
+            <h2 class="section-title">Need Custom Sizing or Rare Model Fitment?</h2>
+            <p class="section-subtitle" style="margin-bottom: 24px;">
+              Every CAVALON interior is crafted on demand to your exact seat contour, split-ratio, and airbag specification. Share your vehicle details with our design studio for a personalized consultation and custom quote.
+            </p>
+            <a href="contact.html" class="btn btn-primary">Request Personalized Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="product-modal" aria-hidden="true">
+    <div class="modal-box">
+      <button type="button" class="modal-close-btn" id="modal-close" aria-label="Close Details">&times;</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    const BRAND_MODELS = {
+      'Maruti Suzuki': ['Swift', 'Baleno', 'Brezza', 'Ertiga', 'Fronx'],
+      'Hyundai': ['i20', 'Creta', 'Venue', 'Verna', 'Exter'],
+      'Tata': ['Nexon', 'Punch', 'Harrier', 'Safari', 'Altroz'],
+      'Mahindra': ['Thar', 'XUV700', 'Scorpio N', 'XUV 3XO'],
+      'Toyota': ['Innova Crysta', 'Innova Hycross', 'Fortuner', 'Glanza'],
+      'Kia': ['Seltos', 'Sonet', 'Carens'],
+      'Honda': ['City', 'Amaze', 'Elevate'],
+      'Renault': ['Kwid', 'Kiger', 'Triber'],
+      'Volkswagen': ['Polo', 'Virtus', 'Taigun'],
+      'Skoda': ['Slavia', 'Kushaq'],
+      'MG': ['Hector', 'Astor', 'Comet EV']
+    };
+
+    const PRODUCTS = [
+      {
+        id: 1,
+        name: 'Obsidian Nappa Signature Seat Covers',
+        category: 'leather',
+        categoryLabel: 'Premium Leather Seat Covers',
+        material: 'Top-Grain Nappa Leatherette & Perforated Insert',
+        colors: ['#1B1D22', '#9E5B34', '#EAE2D3'],
+        brands: ['Hyundai', 'Kia', 'Honda', 'Volkswagen', 'Skoda'],
+        models: ['Creta', 'Verna', 'Seltos', 'City', 'Virtus', 'Slavia'],
+        img: 'assets/images/prod-1.jpg',
+        desc: 'OEM-tensioned full-cabin seat upholstery with ventilated center micro-perforation and airbag-certified side seams.'
+      },
+      {
+        id: 2,
+        name: 'AeroWeave Breathable Fabric Series',
+        category: 'fabric',
+        categoryLabel: 'Fabric Seat Covers',
+        material: '3D Jacquard Automotive Textile + High-Density Foam',
+        colors: ['#464B53', '#2B303A', '#C5B8A5'],
+        brands: ['Maruti Suzuki', 'Tata', 'Renault', 'Hyundai'],
+        models: ['Swift', 'Baleno', 'Fronx', 'Punch', 'Altroz', 'Kiger', 'i20'],
+        img: 'assets/images/prod-2.jpg',
+        desc: 'Cool-touch woven upholstery engineered for humid climates with reinforced bolster abrasion guards.'
+      },
+      {
+        id: 3,
+        name: 'Monarch Double-Diamond Quilted Suite',
+        category: 'diamond',
+        categoryLabel: 'Diamond Quilted Seat Covers',
+        material: 'Italian Nappa-Grade Hide + 12mm Memory Foam',
+        colors: ['#9E5B34', '#4A2E20', '#EAE2D3', '#1B1D22'],
+        brands: ['Mahindra', 'Toyota', 'Tata', 'MG'],
+        models: ['XUV700', 'Scorpio N', 'Fortuner', 'Innova Hycross', 'Harrier', 'Safari', 'Hector'],
+        img: 'assets/images/prod-3.jpg',
+        desc: 'Double-needle diamond geometry with sculpted side bolsters and custom embroidered headrests.'
+      },
+      {
+        id: 4,
+        name: 'Sovereign Two-Tone Bespoke Edition',
+        category: 'twotone',
+        categoryLabel: 'Custom Two-Tone Seat Covers',
+        material: 'Dual-Shade Premium Synthetic Nappa',
+        colors: ['#EAE2D3', '#4A2E20', '#1B1D22'],
+        brands: ['Kia', 'Hyundai', 'Toyota', 'Honda', 'Skoda'],
+        models: ['Carens', 'Sonet', 'Venue', 'Innova Crysta', 'Elevate', 'Kushaq'],
+        img: 'assets/images/prod-4.jpg',
+        desc: 'Architectural two-tone contrast bolsters paired with ivory center panels and matching piping.'
+      },
+      {
+        id: 5,
+        name: 'Apex GT Alcantara Sport Bucket Covers',
+        category: 'sports',
+        categoryLabel: 'Sports Interior Designs',
+        material: 'Charcoal Micro-Suede + Crimson Contrast Stitch',
+        colors: ['#1B1D22', '#8B1E24', '#C8A46B'],
+        brands: ['Volkswagen', 'Skoda', 'Tata', 'Mahindra', 'Hyundai'],
+        models: ['Polo', 'Virtus', 'Taigun', 'Slavia', 'Nexon', 'Thar', 'i20'],
+        img: 'assets/images/prod-5.jpg',
+        desc: 'High-grip Alcantara center zones with sculpted lateral thigh bolsters and motorsport stripe accents.'
+      },
+      {
+        id: 6,
+        name: 'Atelier Stitched Dashboard Cowl Wrap',
+        category: 'dashboard',
+        categoryLabel: 'Dashboard Covers',
+        material: 'Anti-Glare Matte Leather + Contrast French Seam',
+        colors: ['#1B1D22', '#4A2E20'],
+        brands: ['Mahindra', 'Tata', 'Toyota', 'MG', 'Kia'],
+        models: ['Thar', 'XUV700', 'Harrier', 'Fortuner', 'Hector', 'Seltos'],
+        img: 'assets/images/prod-6.jpg',
+        desc: 'Precision-molded dashboard upholstery eliminating windshield glare while adding hand-stitched luxury.'
+      },
+      {
+        id: 7,
+        name: 'Quilted Door Card & Armrest Inserts',
+        category: 'door',
+        categoryLabel: 'Door Panel Upholstery',
+        material: 'Padded Nappa Leatherette',
+        colors: ['#9E5B34', '#1B1D22', '#EAE2D3'],
+        brands: ['Maruti Suzuki', 'Hyundai', 'Tata', 'Honda', 'Toyota'],
+        models: ['Brezza', 'Ertiga', 'Creta', 'Nexon', 'City', 'Glanza'],
+        img: 'assets/images/prod-7.jpg',
+        desc: 'Soft-touch padded door panel inlays and center console armrests color-matched to your seat upholstery.'
+      },
+      {
+        id: 8,
+        name: 'Veloce Hand-Laced Steering Wheel Wrap',
+        category: 'steering',
+        categoryLabel: 'Steering Wheel Covers',
+        material: 'Perforated Leather + Alcantara Grip Zones',
+        colors: ['#1B1D22', '#8B1E24', '#C8A46B'],
+        brands: ['Maruti Suzuki', 'Hyundai', 'Volkswagen', 'Mahindra', 'Kia'],
+        models: ['Swift', 'Exter', 'Virtus', 'XUV 3XO', 'Sonet'],
+        img: 'assets/images/prod-8.jpg',
+        desc: 'Custom-patterned steering wheel wrap with metallic 12-o’clock alignment band and ergonomic thumb grips.'
+      },
+      {
+        id: 9,
+        name: '7D Edge-to-Edge Diamond Floor Carpets',
+        category: 'mats',
+        categoryLabel: 'Floor Mats',
+        material: 'Waterproof Quilted Leatherette + Detachable Coil Layer',
+        colors: ['#1B1D22', '#4A2E20', '#9E5B34'],
+        brands: ['Maruti Suzuki', 'Hyundai', 'Tata', 'Mahindra', 'Toyota', 'Renault', 'MG'],
+        models: ['Ertiga', 'Creta', 'Safari', 'Scorpio N', 'Innova Hycross', 'Triber', 'Comet EV'],
+        img: 'assets/images/prod-9.jpg',
+        desc: 'Laser-measured raised-wall floor protection with anti-slip heel plate and easy-rinse top mats.'
+      },
+      {
+        id: 10,
+        name: 'Grand Tourer Complete Cabin Transformation',
+        category: 'complete',
+        categoryLabel: 'Complete Interior Packages',
+        material: 'Full Nappa Seats + Door Cards + Dashboard + Steering + 7D Mats',
+        colors: ['#9E5B34', '#EAE2D3', '#1B1D22'],
+        brands: ['Mahindra', 'Toyota', 'Tata', 'MG', 'Kia', 'Hyundai'],
+        models: ['XUV700', 'Fortuner', 'Innova Hycross', 'Safari', 'Hector', 'Seltos', 'Creta'],
+        img: 'assets/images/prod-10.jpg',
+        desc: 'Our flagship bumper-to-bumper interior overhaul uniting seats, doors, dash, steering, and carpets in one cohesive palette.'
+      }
+    ];
+
+    let activeBrand = 'all';
+    let activeModel = 'all';
+    let activeCategory = 'all';
+    let searchTerm = '';
+    let sortMode = 'featured';
+
+    const brandSelect = document.getElementById('brand-filter');
+    const modelSelect = document.getElementById('model-filter');
+    const searchInput = document.getElementById('product-search');
+    const sortSelect = document.getElementById('product-sort');
+
+    function populateModelDropdown() {
+      if (activeBrand === 'all') {
+        modelSelect.innerHTML = '<option value="all">All Models</option>';
+        activeModel = 'all';
+        return;
+      }
+      const models = BRAND_MODELS[activeBrand] || [];
+      modelSelect.innerHTML = '<option value="all">All ' + activeBrand + ' Models</option>' +
+        models.map((m) => `<option value="${m}">${m}</option>`).join('');
+      activeModel = 'all';
+    }
+
+    function renderProducts() {
+      let list = PRODUCTS.filter((p) => {
+        const matchBrand = activeBrand === 'all' || p.brands.includes(activeBrand);
+        const matchModel = activeModel === 'all' || p.models.includes(activeModel);
+        const matchCat = activeCategory === 'all' || p.category === activeCategory;
+        const q = searchTerm.trim().toLowerCase();
+        const matchSearch = !q ||
+          p.name.toLowerCase().includes(q) ||
+          p.material.toLowerCase().includes(q) ||
+          p.models.some((m) => m.toLowerCase().includes(q)) ||
+          p.brands.some((b) => b.toLowerCase().includes(q));
+        return matchBrand && matchModel && matchCat && matchSearch;
+      });
+
+      if (sortMode === 'az') list.sort((a, b) => a.name.localeCompare(b.name));
+      if (sortMode === 'za') list.sort((a, b) => b.name.localeCompare(a.name));
+
+      document.getElementById('product-count').textContent = `Showing ${list.length} bespoke design${list.length === 1 ? '' : 's'}`;
+      const grid = document.getElementById('products-grid');
+
+      if (!list.length) {
+        grid.innerHTML = `<div style="grid-column: 1 / -1; text-align: center; padding: 48px 20px; border: 1px dashed var(--border-strong); border-radius: var(--radius-md);">
+          <h3 class="cat-scroll-title">No matching designs found</h3>
+          <p class="section-subtitle" style="margin: 8px auto 18px;">We custom-craft for every model on request. Reset filters or request a custom quote directly.</p>
+          <a href="contact.html" class="btn btn-primary btn-sm">Request Custom Fitment</a>
+        </div>`;
+        return;
+      }
+
+      grid.innerHTML = list.map((p) => `
+        <article class="card">
+          <div class="img-zoom-wrap"><img src="${p.img}" alt="${p.name}" class="product-card-img" loading="lazy" /></div>
+          <div class="product-card-body">
+            <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent);">${p.categoryLabel}</span>
+            <h3 class="cat-scroll-title" style="margin-bottom: 2px;">${p.name}</h3>
+            <p style="font-size: 0.86rem; color: var(--text-secondary);">${p.material}</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-block: 4px;">
+              <div class="color-dots" title="Available Hide Shades">
+                ${p.colors.map((c) => `<span class="color-dot" style="background: ${c};"></span>`).join('')}
+              </div>
+              <span style="font-size: 0.78rem; color: var(--text-muted);">${p.models.slice(0, 3).join(', ')} +more</span>
+            </div>
+            <div style="display: flex; gap: 10px; margin-top: 8px;">
+              <button type="button" class="btn btn-secondary btn-sm" style="flex: 1;" onclick="openProductModal(${p.id})">View Details</button>
+              <a href="contact.html?category=${encodeURIComponent(p.categoryLabel)}" class="btn btn-primary btn-sm" style="flex: 1;">Request Quote</a>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    window.openProductModal = function (id) {
+      const p = PRODUCTS.find((item) => item.id === id);
+      if (!p) return;
+      const modal = document.getElementById('product-modal');
+      document.getElementById('modal-content').innerHTML = `
+        <img src="${p.img}" alt="${p.name}" style="width: 100%; max-height: 360px; object-fit: cover;" />
+        <div style="padding: 28px;">
+          <span class="eyebrow">${p.categoryLabel}</span>
+          <h3 class="section-title" style="font-size: 1.75rem; margin-bottom: 10px;">${p.name}</h3>
+          <p class="section-subtitle" style="margin-bottom: 18px;">${p.desc}</p>
+          <p style="font-size: 0.92rem; margin-bottom: 8px;"><strong>Material:</strong> ${p.material}</p>
+          <p style="font-size: 0.92rem; margin-bottom: 20px;"><strong>Compatible Highlights:</strong> ${p.models.join(', ')} (plus custom model-year templates)</p>
+          <a href="contact.html?category=${encodeURIComponent(p.categoryLabel)}" class="btn btn-primary">Request Custom Quote</a>
+        </div>
+      `;
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden', 'false');
+    };
+
+    document.getElementById('modal-close').addEventListener('click', () => {
+      document.getElementById('product-modal').classList.remove('open');
+    });
+    document.getElementById('product-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'product-modal') e.target.classList.remove('open');
+    });
+
+    brandSelect.addEventListener('change', () => {
+      activeBrand = brandSelect.value;
+      document.querySelectorAll('[data-brand-pill]').forEach((b) => {
+        b.classList.toggle('active', b.getAttribute('data-brand-pill') === activeBrand);
+      });
+      populateModelDropdown();
+      renderProducts();
+    });
+
+    modelSelect.addEventListener('change', () => {
+      activeModel = modelSelect.value;
+      renderProducts();
+    });
+
+    searchInput.addEventListener('input', () => {
+      searchTerm = searchInput.value;
+      renderProducts();
+    });
+
+    sortSelect.addEventListener('change', () => {
+      sortMode = sortSelect.value;
+      renderProducts();
+    });
+
+    document.querySelectorAll('[data-brand-pill]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        activeBrand = btn.getAttribute('data-brand-pill');
+        brandSelect.value = activeBrand;
+        document.querySelectorAll('[data-brand-pill]').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        populateModelDropdown();
+        renderProducts();
+      });
+    });
+
+    document.querySelectorAll('[data-cat]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        activeCategory = btn.getAttribute('data-cat');
+        document.querySelectorAll('[data-cat]').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderProducts();
+      });
+    });
+
+    const urlCat = new URLSearchParams(window.location.search).get('cat');
+    if (urlCat) {
+      activeCategory = urlCat;
+      document.querySelectorAll('[data-cat]').forEach((b) => {
+        b.classList.toggle('active', b.getAttribute('data-cat') === urlCat);
+      });
+    }
+
+    renderProducts();
+  </script>
+</body>
+</html>

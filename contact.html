@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — CAVALON Automotive Interior Atelier</title>
+  <meta name="description" content="Request a custom car interior quote, visit the CAVALON workshop, or connect with our automotive upholstery advisors." />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main>
+    <!-- SECTION 1: CONTACT HERO -->
+    <section class="page-hero" id="contact-hero">
+      <img src="assets/images/hero-contact.jpg" alt="CAVALON luxury automotive customization lounge and bay" class="page-hero-bg" />
+      <div class="page-hero-overlay"></div>
+      <div class="container page-hero-content">
+        <span class="eyebrow hero-reveal-1">Private Consultation</span>
+        <h1 class="page-hero-title hero-reveal-2">Let's Customize Your Drive.</h1>
+        <p class="page-hero-desc hero-reveal-3">
+          Share your vehicle specifications and interior vision with our atelier advisors for a personalized material consultation and tailored quotation.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 2: CONTACT INFORMATION -->
+    <section class="section" id="contact-info">
+      <div class="container">
+        <div class="contact-info-grid" data-anim="stagger-up">
+          <div class="why-feature-item">
+            <div class="why-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h3 class="cat-scroll-title">Phone &amp; WhatsApp</h3>
+            <p class="section-subtitle">+91 98450 12345</p>
+            <a href="https://wa.me/919845012345" target="_blank" rel="noopener noreferrer" style="color: var(--accent); font-weight: 600; font-size: 0.88rem; display: inline-block; margin-top: 8px;">Chat on WhatsApp &rarr;</a>
+          </div>
+
+          <div class="why-feature-item">
+            <div class="why-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <h3 class="cat-scroll-title">Email Desk</h3>
+            <p class="section-subtitle">concierge@cavaloninteriors.com</p>
+            <p style="font-size: 0.84rem; color: var(--text-muted); margin-top: 6px;">Replies within 4 business hours</p>
+          </div>
+
+          <div class="why-feature-item">
+            <div class="why-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 class="cat-scroll-title">Workshop Address</h3>
+            <p class="section-subtitle">Plot 42, Indiranagar Auto Design District, Bengaluru 560038</p>
+          </div>
+
+          <div class="why-feature-item">
+            <div class="why-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="cat-scroll-title">Business Hours</h3>
+            <p class="section-subtitle">Mon – Sat: 9:30 AM – 7:30 PM<br/>Sunday: By Appointment</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CUSTOMIZATION QUOTE FORM -->
+    <section class="section section-alt" id="quote-form-section">
+      <div class="container">
+        <div class="section-header centered" data-anim="fade-up">
+          <span class="eyebrow">Tailored Quotation</span>
+          <h2 class="section-title">Request a Customization Quote</h2>
+          <p class="section-subtitle">Complete your vehicle and material preferences below. No automated pricing—every quote is reviewed by an upholstery specialist.</p>
+        </div>
+
+        <form class="quote-form-card" id="quote-form" novalidate data-anim="flip-up">
+          <div class="quote-form-grid">
+            <div class="form-group">
+              <label class="form-label" for="q-name">Full Name *</label>
+              <input type="text" id="q-name" class="form-control" placeholder="e.g. Vikramaditya Rao" required />
+              <span class="form-error" id="err-q-name"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="q-email">Email Address *</label>
+              <input type="email" id="q-email" class="form-control" placeholder="you@example.com" required />
+              <span class="form-error" id="err-q-email"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="q-phone">Phone Number *</label>
+              <input type="tel" id="q-phone" class="form-control" placeholder="+91 98450 12345" required />
+              <span class="form-error" id="err-q-phone"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="q-brand">Car Brand *</label>
+              <input type="text" id="q-brand" class="form-control" placeholder="e.g. Mahindra, Hyundai, Tata" required />
+              <span class="form-error" id="err-q-brand"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="q-model">Car Model *</label>
+              <input type="text" id="q-model" class="form-control" placeholder="e.g. XUV700, Creta, Safari" required />
+              <span class="form-error" id="err-q-model"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="q-year">Manufacturing Year *</label>
+              <input type="number" id="q-year" class="form-control" min="1995" max="2027" placeholder="e.g. 2025" required />
+              <span class="form-error" id="err-q-year"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="q-category">Customization Category *</label>
+              <select id="q-category" class="form-control" required>
+                <option value="">Select Category</option>
+                <option value="Premium Leather Seat Covers">Premium Leather Seat Covers</option>
+                <option value="Fabric Seat Covers">Fabric Seat Covers</option>
+                <option value="Diamond Quilted Seat Covers">Diamond Quilted Seat Covers</option>
+                <option value="Custom Two-Tone Seat Covers">Custom Two-Tone Seat Covers</option>
+                <option value="Sports Interior Designs">Sports Interior Designs</option>
+                <option value="Dashboard Covers">Dashboard Covers</option>
+                <option value="Door Panel Upholstery">Door Panel Upholstery</option>
+                <option value="Steering Wheel Covers">Steering Wheel Covers</option>
+                <option value="Floor Mats">Floor Mats</option>
+                <option value="Complete Interior Packages">Complete Interior Packages</option>
+              </select>
+              <span class="form-error" id="err-q-category"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="q-material">Preferred Material *</label>
+              <select id="q-material" class="form-control" required>
+                <option value="">Select Material</option>
+                <option value="Genuine Top-Grain Leather">Genuine Top-Grain Leather</option>
+                <option value="Nappa-Inspired Leather">Nappa-Inspired Leather</option>
+                <option value="Premium Synthetic Leather">Premium Synthetic Leather</option>
+                <option value="Alcantara Suede Hybrid">Alcantara Suede Hybrid</option>
+                <option value="Breathable Performance Fabric">Breathable Performance Fabric</option>
+              </select>
+              <span class="form-error" id="err-q-material"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="q-color">Preferred Color</label>
+              <input type="text" id="q-color" class="form-control" placeholder="e.g. Cognac Tan, Obsidian &amp; Ivory" />
+              <span class="form-error"></span>
+            </div>
+
+            <div class="form-group quote-span-full">
+              <label class="form-label" for="q-notes">Additional Requirements</label>
+              <textarea id="q-notes" rows="4" class="form-control" placeholder="Specify ventilated seat compatibility, 6-airbag stitching, headrest embroidery, or preferred installation date..."></textarea>
+            </div>
+
+            <div class="form-group quote-span-full">
+              <label class="form-label" for="q-image">Reference Interior Image Upload (Optional)</label>
+              <input type="file" id="q-image" class="form-control" accept="image/*" />
+              <div id="q-image-preview" style="margin-top: 10px; display: none;">
+                <img id="q-preview-img" src="" alt="Uploaded interior reference" style="max-height: 150px; border-radius: var(--radius-sm); border: 1px solid var(--border-color);" />
+              </div>
+            </div>
+
+            <div class="quote-span-full">
+              <div id="quote-feedback" class="form-feedback" role="alert"></div>
+            </div>
+
+            <div class="quote-span-full">
+              <button type="submit" class="btn btn-primary">Submit Request</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- SECTION 4: VISIT OUR WORKSHOP -->
+    <section class="section" id="visit-workshop">
+      <div class="container">
+        <div class="section-header" data-anim="fade-up">
+          <span class="eyebrow">Visit Our Workshop</span>
+          <h2 class="section-title">Experience Hides &amp; Stitching in Person</h2>
+          <p class="section-subtitle">
+            Drop by our Bengaluru Design Lounge to inspect full leather hides, feel our 12mm memory foam quilting, and see live installations in progress.
+          </p>
+        </div>
+
+        <div class="split-editorial" style="align-items: stretch;">
+          <div style="display: flex; flex-direction: column; gap: 20px;" data-anim="fade-right">
+            <div class="craft-img-frame img-zoom-wrap">
+              <img src="assets/images/contact-workshop.jpg" alt="CAVALON automotive detailing and upholstery bay" loading="lazy" />
+            </div>
+            <div class="card" style="padding: 20px;">
+              <p style="font-weight: 600; margin-bottom: 6px;">CAVALON Flagship Studio</p>
+              <p style="font-size: 0.9rem; color: var(--text-secondary);">Plot 42, 100 Feet Road, Indiranagar Auto Design District, Bengaluru, Karnataka 560038</p>
+            </div>
+            <a href="https://maps.google.com/?q=100+Feet+Road,+Indiranagar,+Bengaluru,+Karnataka+560038" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Get Directions</a>
+          </div>
+
+          <div class="card" style="min-height: 420px; height: 100%; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg);" data-anim="fade-left">
+            <iframe
+              title="CAVALON Flagship Studio Location Map"
+              src="https://maps.google.com/maps?q=100%20Feet%20Road,%20Indiranagar,%20Bengaluru,%20Karnataka%20560038&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              style="width: 100%; height: 100%; min-height: 420px; border: 0; display: block;"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: SOCIAL CONNECTIONS & FINAL CTA -->
+    <section class="section section-alt" id="social-connections">
+      <div class="container">
+        <div class="final-cta-banner" data-anim="blur-in">
+          <div>
+            <span class="eyebrow">Stay Connected</span>
+            <h2 class="section-title">Follow Our Daily Cabin Builds</h2>
+            <p style="color: rgba(250, 248, 245, 0.78); max-width: 52ch;">
+              Watch behind-the-scenes upholstery timelapses, hide comparisons, and fresh vehicle deliveries across our official channels.
+            </p>
+            <div class="social-row">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-ig" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-fb" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-yt" aria-label="YouTube">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+              <a href="https://wa.me/919845012345" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-wa" aria-label="WhatsApp">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.766.469 3.484 1.344 5l-1.406 5.156 5.281-1.375c1.469.797 3.109 1.219 4.75 1.219 5.516 0 9.969-4.453 9.969-9.969S17.547 2 12.031 2zm5.813 14.125c-.25.703-1.438 1.344-2 1.422-.516.078-1.172.109-1.891-.125-.438-.141-1-.328-1.719-.641-3.031-1.313-5-4.359-5.156-4.563-.156-.203-1.234-1.641-1.234-3.125s.781-2.219 1.063-2.516c.281-.297.609-.375.813-.375s.406 0 .578.016c.188.016.438-.078.688.516.25.609.859 2.094.938 2.25.078.156.125.344.031.547-.094.203-.141.328-.297.5-.156.172-.328.391-.469.516-.156.141-.313.297-.141.594.172.297.766 1.266 1.641 2.047 1.125 1 2.078 1.313 2.375 1.469.297.156.469.125.641-.078.172-.203.734-.859.938-1.156.203-.297.406-.25.672-.156.266.094 1.703.797 2 .953.297.156.484.219.563.344.078.125.078.734-.172 1.438z"/></svg>
+              </a>
+            </div>
+          </div>
+          <a href="#quote-form-section" class="btn btn-primary">Start Your Quote Above</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    const qp = new URLSearchParams(window.location.search);
+    if (qp.get('brand')) document.getElementById('q-brand').value = qp.get('brand');
+    if (qp.get('model')) document.getElementById('q-model').value = qp.get('model');
+    if (qp.get('material')) document.getElementById('q-material').value = qp.get('material');
+    if (qp.get('color')) document.getElementById('q-color').value = qp.get('color');
+    if (qp.get('category')) document.getElementById('q-category').value = qp.get('category');
+
+    document.getElementById('q-image').addEventListener('change', (e) => {
+      const file = e.target.files?.[0];
+      const box = document.getElementById('q-image-preview');
+      if (!file) {
+        box.style.display = 'none';
+        return;
+      }
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        document.getElementById('q-preview-img').src = ev.target.result;
+        box.style.display = 'block';
+      };
+      reader.readAsDataURL(file);
+    });
+
+    document.getElementById('quote-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      let valid = true;
+      const setErr = (id, msg) => {
+        document.getElementById(id).textContent = msg;
+        if (msg) valid = false;
+      };
+
+      const name = document.getElementById('q-name').value.trim();
+      const email = document.getElementById('q-email').value.trim();
+      const phone = document.getElementById('q-phone').value.trim();
+      const brand = document.getElementById('q-brand').value.trim();
+      const model = document.getElementById('q-model').value.trim();
+      const year = parseInt(document.getElementById('q-year').value, 10);
+      const cat = document.getElementById('q-category').value;
+      const mat = document.getElementById('q-material').value;
+
+      setErr('err-q-name', name.length < 2 ? 'Please enter your full name.' : '');
+      setErr('err-q-email', !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? 'Enter a valid email address.' : '');
+      setErr('err-q-phone', phone.replace(/\D/g, '').length < 8 ? 'Enter a valid phone number.' : '');
+      setErr('err-q-brand', !brand ? 'Car brand is required.' : '');
+      setErr('err-q-model', !model ? 'Car model is required.' : '');
+      setErr('err-q-year', isNaN(year) || year < 1995 || year > 2027 ? 'Enter a valid year (1995–2027).' : '');
+      setErr('err-q-category', !cat ? 'Select a customization category.' : '');
+      setErr('err-q-material', !mat ? 'Select a preferred material.' : '');
+
+      const fb = document.getElementById('quote-feedback');
+      if (!valid) {
+        fb.className = 'form-feedback error';
+        fb.textContent = 'Please correct the highlighted fields above before submitting.';
+        return;
+      }
+
+      fb.className = 'form-feedback success';
+      fb.textContent = `Thank you, ${name}. Your customization request for the ${year} ${brand} ${model} (${cat}) has been validated and prepared for our studio desk (frontend demo — connect your backend endpoint to dispatch live emails).`;
+      e.target.reset();
+      document.getElementById('q-image-preview').style.display = 'none';
+    });
+  </script>
+</body>
+</html>
