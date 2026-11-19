@@ -651,7 +651,7 @@ body.has-fixed-header {
 }
 
 .back-to-top-btn {
-  position: absolute;
+  position: fixed;
   bottom: 26px;
   inset-inline-end: clamp(16px, 3vw, 40px);
   width: 46px;
@@ -664,6 +664,7 @@ body.has-fixed-header {
   justify-content: center;
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.45);
   transition: transform 0.35s var(--ease-luxury), background-color 0.25s ease;
+  z-index: 990;
 }
 
 .back-to-top-btn:hover {
